@@ -1,22 +1,34 @@
-﻿Console.WriteLine("Introdusca el numero que desea evaluar si es numero primo");
-String numberEvaluar = Console.ReadLine();
-int numericValue;
-bool isNumber = int.TryParse(numberEvaluar, out numericValue);
+﻿Console.WriteLine("Presiona 'Esc' para salir de la aplicación");
 
-if(isNumber){
-    int a = 0;
-    for(int i = 1;i <= numericValue;i++){
-        if(numericValue % i == 0){
-            a++;
+while(true){
+    Console.WriteLine("Introdusca el numero que desea evaluar si es numero primo");
+    String expresionEvaluar = Console.ReadLine();
+
+    if(expresionEvaluar == "exit"){
+        Console.WriteLine("\nSaliendo de la aplicación...");
+        break;
+    }else{
+        
+        int numericValue;
+        bool isNumber = int.TryParse(expresionEvaluar, out numericValue);
+
+        if(isNumber){
+            int a = 0;
+            for(int i = 1;i <= numericValue;i++){
+                if(numericValue % i == 0){
+                    a++;
+                }
+            }
+            if(a == 2){
+                Console.WriteLine("El numero ['" + expresionEvaluar + "'] es primo");    
+            }else{
+                Console.WriteLine("El numero ['" + expresionEvaluar + "'] no es primo");    
+            }
+        }
+        else{
+            Console.WriteLine("El dato introducido ['" + expresionEvaluar + "'] no es un numero valido");
         }
     }
-    if(a != 2){
-        Console.WriteLine("El numero ['" + numberEvaluar + "'] no es primo");    
-    }else{
-        Console.WriteLine("El numero ['" + numberEvaluar + "'] es primo");    
-    }
-}
-else{
-    Console.WriteLine("El dato introducido ['" + numberEvaluar + "'] no es un numero valido");
+    
 }
 

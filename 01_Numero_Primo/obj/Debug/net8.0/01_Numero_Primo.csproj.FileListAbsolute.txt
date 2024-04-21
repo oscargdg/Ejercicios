@@ -12,3 +12,4 @@ C:\Users\Oscar\Desktop\CodigoNet\Ejercicios\01_Numero_Primo\obj\Debug\net8.0\ref
 C:\Users\Oscar\Desktop\CodigoNet\Ejercicios\01_Numero_Primo\obj\Debug\net8.0\01_Numero_Primo.pdb
 C:\Users\Oscar\Desktop\CodigoNet\Ejercicios\01_Numero_Primo\obj\Debug\net8.0\01_Numero_Primo.genruntimeconfig.cache
 C:\Users\Oscar\Desktop\CodigoNet\Ejercicios\01_Numero_Primo\obj\Debug\net8.0\ref\01_Numero_Primo.dll
+C:\Users\Oscar\Desktop\CodigoNet\Ejercicios\01_Numero_Primo\obj\Debug\net8.0\01_Numero_Primo.sourcelink.json
